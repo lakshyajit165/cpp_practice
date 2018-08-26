@@ -28,5 +28,6 @@ int main(){
 	string s,st;
 	cin>>s;
 	check(s,s.length(),st);
+	getchar();
 	return 0;
 }
