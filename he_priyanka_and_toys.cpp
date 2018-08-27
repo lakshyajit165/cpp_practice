@@ -8,13 +8,9 @@ int main(){
     for(int i = 0; i<n; i++)
         cin>>A[i];
     sort(A,A+n);
-    for(int i = 0; i<n; i++)
-        cout<<A[i]<<" ";
-    cout<<endl;    
     start = A[0];
     for(int i = 1; i<n; i++){
-        if((A[i] - start) < 4){
-            start = A[i];
+        if(A[i] <= start + 4){
             continue;
         }else{
             start = A[i];
