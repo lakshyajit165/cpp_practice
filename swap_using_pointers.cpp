@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstdio>
 using namespace std;
 void swap(int *x, int *y){
    
@@ -13,5 +14,6 @@ int main(){
     cin>>a>>b;
     swap(&a,&b);
     cout<<a<<" "<<b;
+    std::getchar();
     return 0;
 }
